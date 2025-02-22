@@ -29,7 +29,7 @@
   flex-direction: column;
   justify-content: space-evenly;
 
-  background-image: url("/img/leafs.png");
+  background-image: url("img/leafs.png");
   background-size: cover;
 }
 
