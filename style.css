@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: red;
+  font-family: sans-serif;
 }
 
 @font-face {
@@ -16,9 +16,6 @@
 .wrapper {
   width: 100%;
   min-height: 100vh;
-  
-  background-color: blue;
-  border: 1px solid red;
 
   display: flex;
 }
@@ -34,13 +31,11 @@
 
   background-image: url("/img/leafs.png");
   background-size: cover;
-  border: 1px solid red;
 }
 
 .odin-logo-wrapper {
   width: 100%;
   height: 15%;
-  outline: 1px solid rgb(38, 0, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +55,6 @@
 .odin-img {
   width: 130px;
   height: 100%;
-  outline: 2px solid yellowgreen;
 }
 
 img {
@@ -83,15 +77,13 @@ img {
 
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 
   flex-grow: 1;
 
 }
 
 .hero-text {
-  background-color: antiquewhite;
-  border: 1px solid red;
+  background-color: rgba(249,250,251,255);
   flex-grow: 1;
 
   display: flex;
@@ -99,16 +91,82 @@ img {
   justify-content: center;
   align-items: center;
 
-  padding: 50px;
+  padding: 150px 50px 50px 50px;
+
+  font-size: 2rem;
+  font-weight: 700;
 
 }
 
 .sign-up-form {
-  background-color: white;
+  background-color: rgba(255,255,255,255);
   flex-grow: 1;
+
+  box-shadow: 0px 10px 6px 0px rgba(0,0,0,0.25);
+  padding: 50px;
+
+  position: relative;
+}
+
+.sign-up-form > p {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+form {
+  width: 840px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 70px;
+}
+
+input {
+  margin: 5px;
+  border-radius: 5px;
+  height: 2rem;
+  width: 23rem;
+}
+
+label {
+  appearance: none;
+  font-family: sans-serif;
+  display: block;
+}
+
+input:focus {
+  background: rgb(0 0 0 / 5%);
+  border-radius: 5px;
+}
+
+input:user-invalid{
+  border: 1px solid #ff0000;
 }
 
 .footer {
-  background-color: antiquewhite;
+  background-color: rgba(249,250,251,255);
   flex-grow: 1;
+}
+
+button {
+  margin: 50px;
+  padding: 15px;
+  font: bold 1.5rem sans-serif;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: #596D48;
+  cursor: pointer;
+  color: #fff;
+ 
+}
+
+button:hover,
+button:focus {
+  background: #000;
+  color: #fff;
+}
+
+.footer > p {
+  margin: 5px 50px;
 }
